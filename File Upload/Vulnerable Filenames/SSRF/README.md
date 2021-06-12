@@ -1,0 +1,1 @@
+Abusing the "Upload from URL", if this image is going to be saved in some public site, you could also indicate a URL from IPlogger and steal information of every visitor.

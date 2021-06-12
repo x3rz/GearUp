@@ -1,0 +1,3 @@
+- Set filename ../../etc/passwd/logo.png
+- Set filename ../../../logo.png as it might changed the website logo.
+- Symlink ln -s /etc/passwd ./test upload it and check if you can see passwd.
