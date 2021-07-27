@@ -1,3 +1,4 @@
+# FROM https://github.com/osnr/horrifying-pdf-experiments
 import sys
 
 from pdfrw import PdfWriter
@@ -11,7 +12,7 @@ def make_js_action(js):
     action.S = PdfName.JavaScript
     action.JS = js
     return action
- 
+
 def make_field(name, x, y, width, height, r, g, b, value=""):
     annot = PdfDict()
     annot.Type = PdfName.Annot
@@ -22,11 +23,11 @@ def make_field(name, x, y, width, height, r, g, b, value=""):
     annot.MaxLen = 160
     annot.T = PdfString.encode(name)
     annot.V = PdfString.encode(value)
- 
+
     # Default appearance stream: can be arbitrary PDF XObject or
     # something. Very general.
     annot.AP = PdfDict()
- 
+
     ap = annot.AP.N = PdfDict()
     ap.Type = PdfName.XObject
     ap.Subtype = PdfName.Form
